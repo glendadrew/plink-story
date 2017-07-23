@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width:1920px;
+    height:1080px;
+    background: url('../img/bkgd-dashes.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*custom  CSS */
+
+.sound-clips {
+    visibility: hidden;
+}
+
+#record {
+    width: 584px;
+    height: 526px;
+    position: absolute;
+    top: 266px;
+    left: 23px;
+}
+
+#stop {
+    width: 584px;
+    height: 528px;
+    position: absolute;
+    top: 250px;
+    left: 411px;
+}
+
+#play {
+    width: 553px;
+    height: 575px;
+    position: absolute;
+    top: 185px;
+    left: 837px;
+}
+
+#save {
+    width: 537px;
+    height: 581px;
+    position: absolute;
+    top: 234px;
+    left: 1361px;
+}
+
+#stopWrapper,
+#playWrapper,
+#saveWrapper {
+    opacity: 0;
+    display: none;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+        color: #1CA533;
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        color: orange;
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        fill: #1CA533;
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        fill: orange;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) translate(10%, 10%);
+        fill: #1CA533;
+    }
+    to {
+        transform: rotate(360deg) translate(10%, 10%);
+        fill: orange;
+        ;
+    }
+}
